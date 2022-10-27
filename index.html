@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>First Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scrollreveal.js"></script>
+</head>
+
+<body>
+    <!--MENU ENCABEZADO    -->
+
+    <div class="contenedor-header">
+        <header>
+            <nav class = "topnav"id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#sobremi">Acerca de mí</a></li>
+                    <li><a href="#skills">Mis Habilidades</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="portfolio">Mi portafolio</a></li>
+                    <li><a href="contact">Contacto</a></li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!--MENU ENCABEZADO    -->
+
+    <section id="inicio" class="inicio">
+        <div class="mensajeInicio">
+            <h1>Soy<span> Edgar Lopez</span> </h1>
+            <h2>Creo, diseño y desarrollo para darle el valor a tu producto.</h2>
+
+        </div>
+        <div class="contenido-banner">
+            <p class="primerElemento">UI Designer <br><span>4 años</span></p>
+
+            <div class="contenedor-img">
+                <img src="img/nueva.png" alt="">
+
+            </div>
+            <div id="segundoElemento" class="segundoElemento">
+                <p>Frontend <br> <span>1 año</span></p>
+            </div>
+
+        </div>
+        <div class="redes left ">
+
+
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+
+        </div>
+
+    </section>
+
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola,soy Edgar Lopez</span> Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Quo modi a beatae, delectus, iure natus quia repudiandae
+                voluptatibus molestiae tempore eos harum exercitationem tenetur dolores
+                assumenda quae omnis iste aliquam?</p>
+
+            <button>
+                Descargar CVV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--ESTUDIOS-->
+    <section id="estudios" class="estudios">
+        <div id="contenido-seccion" class="contenido-seccion">
+            <h2>Estudios</h2>
+            <div class="estudios">
+                <div id="cuadro1" class="cuadro1">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAAe1BMVEXiAxr///////3gAADhAADiABX309L1vb/hAAznUVbjGifhCxPwmpzztbX529riABH3zc/tkpHoWF788fHlND364eLlP0fjMjTpaW3sjIrjKi7qc3TzubfxqavujZHqfHztgYbnXl/mTE/86ur2xcXkP0HmWFjwo6PshYSiLXZlAAADmklEQVRoge2b61biMBCAmyahUCwFuxXB9YJU5f2fcAGxNDdmJiQ9uvb7oedg0q/FNJPMtEny2xkLLvgnp9+i1Foofzz+3H8qxx5I7ciTe4M3pY28NVvIROabWzpL1c4bZnAjui3KmdlimoxvzU9hnoQqz1iqwRZKk/HIbLGXT4xPYdiLRd45N4dca3GS0y7bLmezllFllVfFY0vVytlscYOnYXa5FF/wObPKc94yY6284AIN3znkeTsIXfLzMFXlCRqxGuSDfJD/dDkUTXlEeb4BeP+IJi9fvQNLELlnSA0lhy8+npxti7+XyTbjaPKGQ6juoPI54bYf5IP8annDpy60fVJ4eVrNHNTz6Fd+YYrbJtZL7yGw7E8qsvxuW7uILnczzevYX7sbmQzyQX5ZvlK23bxfeT1XqNIe5fosmfYqN5e8vcltwPLSmYsRaLlc3r3Z6HRwzO3V1gV6bk9kaaPTNWJUg/HZLvUir1zUjmOFk7PMvVVBreGukjdXrl4H+W+RC/cwNVHkLW/e8hGFTrK/zloaXzmtXOEoc6S+cir2Ao+H3FLagrGXtshyuf7jgdz3M0t9ryXs0+zWGApw6GfeB2R3In3w7ai7k9yDw1F8+mnykAMO5kMdkgFvNUS/G4ucdPbpFbVUi9x7et1S+h1igk0eILDATBzy60MqzHgzyAe5KXdsNc8NHHJp79g5xDso54U1iThaX5GBPLGF5Z77c2RRD5Sn+rSZItIiQNb5C4S80jf32Hz71rlNPbEA5exJdBcA+EpDxqnxHEoCEuQNJ65kwtZYEhqD/MfLM/A5rYhV5PrjESBe/RyxnrQ8hhjoPkcsnTHybk20RCX7kYEFlqe1UggdYZL9cr17vsxDwVBy44wRyX7LplXjGSc3/1chno3awfLGnrjtRS6X1kzEstMhnty15e9HDqLK8Y92B5fP7x8QfK58Q8uR+/P3MoocxwQth4KiOMtRUOTiJQMojpkJKZeLFczu8Hg6Ws4LzLXs5fDm7Pg1ZST5Iyo0Hp74wST9BF0O/ycP8iWCvKHKWfECIfcDzl087VBRBtxRvgIXggl2tJNutaNcXcPZiXGf0+Soi8fPcCQ5K6ZrBJ8dwsvBbek5HEeQww2/GOTfS34OpFQ5Jrqcjuxatz+ca2MNRU56cSqzy/WaaOBJpnNk8styF+RUDDn4mqBD7lXa0i4LfkHSQX7nwVo7MvxqqAOfGixhlfyf8g8TD+ynFi1EZgAAAABJRU5ErkJggg=="
+                        alt="">
+                    <h3>Tecnologo en Sistemas</h3>
+                    <p>2014-2020</p><br>
+                    <p>Licenciatura en Sistemas</p>
+                </div>
+                <div class="cuadro2">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                    <h3>Academlo</h3>
+                    <p>2022-2023</p><br>
+                    <p>Programa Full Stack</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--MIS HABILIDADES-->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Mis Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="skill">
+                        <span>Web Design</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Interaction Design</span>
+                        <div class="barra-skill">
+                            <div class="progreso interaction">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>UX</span>
+                        <div class="barra-skill">
+                            <div class="progreso ux">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Frameworks</span>
+                        <div class="barra-skill">
+                            <div class="progreso frameworks">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--EXPERIENCE-->
+    <section class="experiencia" id="experiencia">
+        <div class="contenido-seccion">
+            <h2>Experiencia</h2>
+            <ul>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+                        alt="">
+                    <p>Interactive Design</p>
+                </li>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL2F7u5f-H7Wf2XDuhd_QTSWXLQeMacAW_vxyx8xt1uw&s"
+                        alt="">
+                    <p>Interactive Design</p>
+                </li>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL2F7u5f-H7Wf2XDuhd_QTSWXLQeMacAW_vxyx8xt1uw&s"
+                        alt="">
+                    <p>Interactive Design</p>
+                </li>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL2F7u5f-H7Wf2XDuhd_QTSWXLQeMacAW_vxyx8xt1uw&s"
+                        alt="">
+                    <p>Interactive Design</p>
+                </li>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL2F7u5f-H7Wf2XDuhd_QTSWXLQeMacAW_vxyx8xt1uw&s"
+                        alt="">
+                    <p>Interactive Design</p>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!--SCRIPTS-->
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
