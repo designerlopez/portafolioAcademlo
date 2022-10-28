@@ -34,3 +34,4 @@ sr.reveal('.experiencia', {
     distance:'-100px'
 
 });
+

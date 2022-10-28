@@ -5,7 +5,7 @@
   font-family: "Work Sans";
   margin: 0;
   padding: 0;
- 
+
 }
 
 
@@ -13,63 +13,74 @@ html {
   scroll-behavior: smooth;
 }
 
-h1{
+h1 {
   font-size: 48px;
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
 }
 
+
+
 .contenedor-header {
-  background-color: #1a805b;
-  padding-top: 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-
-.contenedor-header header {
   display: flex;
-  margin: auto;
   justify-content: flex-end;
-  align-items: flex-start;
-  padding: 10px 15px
+  background-color: #1a805b;
+  color: white;
 }
 
-.contenedor-header header ul {
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
   display: flex;
+}
+
+.navbar-links li {
   list-style: none;
 }
 
-.contenedor-header .topnav a.active{
-  color: yellow;
-}
-
-.contenedor-header header nav ul li a {
-  color: #fff;
-  margin: 0 15px;
-  padding: 3px;
-  transition: 4s;
+.navbar-links li a {
   text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
 }
 
-.contenedor-header header nav ul li a:hover {
-  color: yellow;
+.navbar-links li:hover {
+  background-color: #1CB698;
 }
 
-@media (max-width: 480px) {
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  
 
-  .contenedor-header {
-    background: #1a805b;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+
+@media (max-width: 400px) {
+  .toggle-button {
+    display: flex;
+    background-color: red;
   }
 
-  .contenedor-header header {
+  .navbar-links {
     display: none;
-    background: #1a805b;
   }
-
 
 }
 
@@ -80,7 +91,7 @@ h1{
 
   background: #1a805b;
   color: #fff;
-  margin-top: 40px;
+  margin: 0;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
@@ -103,7 +114,7 @@ h1{
   text-align: center;
   justify-content: center;
   padding-bottom: 40px;
-  
+
 }
 
 .inicio .mensajeInicio span {
@@ -157,16 +168,17 @@ h1{
 
 }
 
-.contenedor-img{
+.contenedor-img {
   max-width: 100%;
 }
+
 .inicio .contenido-banner h2 {
   font-size: 15px;
   font-weight: normal;
 }
 
 .inicio .redes {
-  display:flex;
+  display: flex;
   padding: 0.5rem;
   justify-content: center;
   width: 100%;
@@ -177,7 +189,7 @@ h1{
   display: inline-flex;
   text-decoration: none;
   border-radius: 10%;
-  padding:3px;
+  padding: 3px;
   font-size: 2rem;
   transition: .3s;
   align-items: center;
@@ -192,14 +204,15 @@ h1{
 
 
 @media (max-width: 780px) {
-  .contenido-banner{
+  .contenido-banner {
     max-width: 50%;
   }
 
-  .segundoElemento{
+  .segundoElemento {
     margin: -25px 0 0 253px;
   }
 }
+
 /* SECCION SOBRE MI*/
 
 .sobremi {
@@ -480,8 +493,8 @@ body {
 
 
 @media (max-width: 480px) {
-  
-  .experiencia ul{
+
+  .experiencia ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
