@@ -59,6 +59,7 @@ h1 {
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  z-index: 99;
   
 
 }
@@ -72,7 +73,7 @@ h1 {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .toggle-button {
     display: flex;
     background-color: red;
